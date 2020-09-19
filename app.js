@@ -47,9 +47,9 @@ catch(error) {
 const sendData = (data = {}) => {
 console.log(data);
 
-projectData.temperature = req.body.temperature;
-projectData.date = req.body.date;
-projectData.userResponse = req.body.userResponse;
+projectData.temperature = data.temperature;
+projectData.date = data.date;
+projectData.userResponse = data.userResponse;
 
 };
 
@@ -64,6 +64,6 @@ const changeUI = (data = {}) => {
     document.getElementById('date').innerHTML = newDate;
     document.getElementById('temp').innerHTML = data.temperature;
     document.getElementById('content').innerHTML = data.userResponse;
-    return all;
+    return data;
 
 }
