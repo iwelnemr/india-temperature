@@ -22,7 +22,7 @@ function action() {
     sendData({temperature: data.main.temp, date:data.dt, userResponse:userResponse});
   })
 
-  .then (setTimeout(changeUI, 2000))
+  .then (changeUI)
 }
 
 
