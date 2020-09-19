@@ -22,7 +22,7 @@ function action() {
     sendData({temperature: data.main.temp, date:data.dt, userResponse:userResponse});
   })
 
-  .then (setTimeout(changeUI(projectData), 4000))
+  .then (setTimeout(changeUI, 4000))
 }
 
 
@@ -54,8 +54,9 @@ projectData.userResponse = data.userResponse;
 };
 
 /**** changeUI ****/
-const changeUI = (data = {}) => {
-  
+const changeUI = () => {
+
+  let data = projectData;
     console.log(data);
 
     let d = new Date(data.date * 1000);
