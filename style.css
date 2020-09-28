@@ -16,3 +16,9 @@ body, html {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.form-control{
+    background-color:rgba(0,0,0,0) !important;
+    border:none !important;
+
+}
